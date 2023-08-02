@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="design.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap" rel="stylesheet" />
+   <!----======== CSS ======== -->
+   <link rel="stylesheet" href="/static/css/form.css">
+
+   <!----===== Iconscout CSS ===== -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="https://kit.fontawesome.com/8bdbf5ddef.js" crossorigin="anonymous"></script>
+  
+    <style>
+      body{
+        font-family: 'Jost', sans-serif;
+      }
+    </style>
+  </head>
+  <body >
+    
+    <section id="title">
+      <div class="navstick">
+        <nav class="glass navbar navbar-expand-lg fixed-top top ">
+          <div class="container-fluid">
+            <a href="/"><img src="/static/img/LoveMatchz.png" alt="" style="height: 4rem" /></a>
+            <button class="navbar-toggler btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto " style="font-size: 1.3rem">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">
+                    HOME
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""> PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""> CONTACT US </a>
+                </li>
+              </ul>
+            </div>
+  
+            <button type="button" class="btn btn-dark" style="
+                  margin: 0px 1.5% 0px 1%;
+                  border-radius: 16px;
+                  padding: 5px 21px;
+                "
+                >
+                <a href="/login" class="nav-link"> LOGIN</a>
+            </button>
+            <!-- <button type="button" class="btn" style="
+                  margin: 0px 1.5% 0px 1%;
+                  border-radius: 16px;
+                  padding: 5px 21px;
+                  background-color: aliceblue;
+                ">
+              Login
+            </button> -->
+          </div>
+        </nav>
+      </div>
+    </section>
+    <div class="container" style="margin-top: 5%;">
+        <form method="POST" action="/" enctype="multipart/form-data">
+            <div class="form first">
+                <header>Registration</header>
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="full-name">Who is the for:</label>
+                            <select id="for" name="for" required>
+                                <option value="">Select</option>
+                                <option value="Me">Me</option>
+                                <option value="Son">Son</option>
+                                <option value="Daughter">Daughter</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Others</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">Date of Birth</label>
+                            <input type="date" id="date-of-birth" name="date-of-birth" required
+                                placeholder="Enter birth date" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="full-name">Marital Status</label>
+                            <select id="mst" name="mst" required>
+                                <option value="">Select</option>
+                                <option value="male">Never Married</option>
+                                <option value="female">Divorced</option>
+                                <option value="other">Widowed</option>
+                                <option value="other">Widower</option>
+                                <option value="other">Awating Divorce</option>
+                                <option value="other">Annulled</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">Height( in ft):</label>
+                            <input type="text" id="height" name="height" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">Weight( in kg):</label>
+                            <input type="text" id="weight" name="weight" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="full-name">Blood Group:</label>
+                            <select id="bloodgrp" name="bloodgrp" required>
+                                <option value="">Select</option>
+                                <option value="male">A+</option>
+                                <option value="female">A-</option>
+                                <option value="other">B+</option>
+                                <option value="other">B-</option>
+                                <option value="other">AB+</option>
+                                <option value="other">AB-</option>
+                                <option value="other">O+</option>
+                                <option value="other">O-</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">City:</label>
+                            <input type="text" id="city" name="city" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">State:</label>
+                            <input type="text" id="state" name="state" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">Country:</label>
+                            <input type="text" id="country" name="country" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">Current-Address:</label>
+                            <input type="text" id="curradd" name="curradd" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phnno" name="phnno" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" required />
+                        </div>
+
+                        <div class="input-field">
+                            <label for="religion">Native Place</label>
+                            <input type="text" id="place" name="place" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="religion">Religion:</label>
+                            <input type="text" id="religion" name="religion" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="caste">Community:</label>
+                            <input type="text" id="caste" name="caste" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="religion">Sub-Community:</label>
+                            <input type="text" id="SubCommunity" name="SubCommunity" />
+                        </div>
+                        <div class="input-field">
+                            <label for="religion">Mother Tongue:</label>
+                            <input type="text" id="lang" name="lang" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="full-name">Food Prefrences:</label>
+                            <select id="foodpref" name="foodpref" required>
+                                <option value="">Select</option>
+                                <option value="male">Veg</option>
+                                <option value="female">Non-Veg</option>
+                                <option value="other">Jain</option>
+                                <option value="other">Vegan</option>
+                                <option value="other">Ocassionally Non-Veg</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="full-name">Disability:</label>
+                            <select id="disability" name="disability" required>
+                                <option value="">Select</option>
+                                <option value="male">Yes</option>
+                                <option value="male">No</option>
+                                </section>
+                        </div>
+                        <div class="input-field">
+                            <label for="photo">Photo:</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" />
+                        </div>
+                    </div>
+                </div>
+                <div class="details ID">
+                    <span class="title">Education and Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="education">Highest Qualification:</label>
+                            <select id="education" name="education" required>
+                                <option value="">Select</option>
+                                <option value="male">10th Pass</option>
+                                <option value="female">12th Pass</option>
+                                <option value="other">Diploma</option>
+                                <option value="other">Graduate</option>
+                                <option value="other">Post-Graduate</option>
+                                <option value="other">Doctor</option>
+                                <option value="other">C.A</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="occupation"> College Name:</label>
+                            <input type="text" id="college" name="college" required />
+                        </div>
+
+                        <div class="input-field">
+                            <label for="occupation">Occupation:</label>
+                            <input type="text" id="occupation" name="occupation" required />
+                        </div>
+
+                        <div class="input-field">
+                            <label for="occupation">Company/Organization you work for:</label>
+                            <input type="text" id="workcompany" name="workcompany" required />
+                        </div>
+                        <div class="input-field">
+                            <label for="annual-income">Annual Income:</label>
+                            <input type="text" id="annual-income" name="annual-income" required />
+                        </div>
+                        <div class="details ID">
+                            <span class="title">Family Details</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="height">No of Family Members:</label>
+                                    <input type="number" id="noOfFamily" name="noOfFamily" required />
+                                </div>
+        
+                                <div class="input-field">
+                                    <label for="city">Mother Name:</label>
+                                    <input type="text" id="mother" name="mother" required />
+                                </div>
+        
+                                <div class="input-field">
+                                    <label for="state">Mother Occupation:</label>
+                                    <input type="text" id="mocc" name="mocc" required />
+                                </div>
+        
+                                <div class="input-field">
+                                    <label for="country">Father Name:</label>
+                                    <input type="text" id="father" name="father" required />
+                                </div>
+        
+                                <div class="input-field">
+                                    <label for="email">Father Occupation:</label>
+                                    <input type="text" id="focc" name="focc" required />
+                                </div>
+        
+                                <div class="input-field">
+                                    <label for="email">Guardian(if applicable):</label>
+                                    <input type="text" id="guardian" name="guardian" required />
+                                </div>
+                                <div class="input-field">
+                                    <label for="education">Living with family:</label>
+                                    <select id="livingstat" name="livingstat" required>
+                                        <option value="">Select</option>
+                                        <option value="">Yes</option>
+                                        <option value="male">No</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="buttons">
+                                <button class="sumbit">
+                                    <span class="btnText">Submit</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- <button class="done" type="submit">Done</button> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
