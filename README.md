@@ -12,4 +12,8 @@ Dashboard
 ![image](https://github.com/Adxt/Matrimonial_Website/assets/79433617/6ddac7c9-1076-4689-9cd0-068b95a2b3b5)
 
 
+#Admin Dashboard
+![image](https://github.com/Adxt/Matrimonial_Website/assets/79433617/45346534-585a-444a-b4e6-0c72dcdae193)
+
+
 
