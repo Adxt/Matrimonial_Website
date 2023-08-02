@@ -8,4 +8,8 @@ This is a Mtrimonial website with basic Features included and in still in Devlop
 
 ![image](https://github.com/Adxt/Matrimonial_Website/assets/79433617/becee72d-d213-42a0-91e6-3f2d9d43ec28)
 
+Dashboard
+![image](https://github.com/Adxt/Matrimonial_Website/assets/79433617/6ddac7c9-1076-4689-9cd0-068b95a2b3b5)
+
+
 
